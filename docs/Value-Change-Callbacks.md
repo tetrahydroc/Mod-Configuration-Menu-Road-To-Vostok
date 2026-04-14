@@ -2,7 +2,7 @@
 
 ### Overview
 
-MCM supports real-time callbacks when a user changes a setting in the MCM UI. Callbacks fire immediately as the user interacts — not just on save. This enables linked settings, live previews, and cross-element validation.
+MCM supports real-time callbacks when a user changes a setting in the MCM UI. Callbacks fire immediately as the user interacts not just on save. This enables linked settings, live previews, and cross-element validation.
 
 ### Setup
 
@@ -50,7 +50,7 @@ func callback_name(valueId: String, newValue, menu: MCMMenu)
 |---|---|---|
 | `valueId` | String | The config key that changed (e.g. `"my_slider"`) |
 | `newValue` | Variant | The new value (int/float for sliders, int for dropdowns, bool for toggles, String for text, Color for color pickers) |
-| `menu` | MCMMenu | The menu instance — call `menu.GetElements()` to access sibling settings |
+| `menu` | MCMMenu | The menu instance call `menu.GetElements()` to access sibling settings |
 
 ### Accessing Other Settings
 
@@ -149,7 +149,7 @@ func on_use_custom_changed(valueId: String, newValue, menu: MCMMenu):
         elements["custom_value"].SetValue(100)  # reset to default when toggled off
 ```
 
-**Cascading tiers** (what Trader Improvements uses):
+**Cascading tiers**:
 
 ```gdscript
 # Register 5 tier sliders with the same callback
