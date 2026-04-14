@@ -2,7 +2,7 @@ name: Sync docs to Wiki
 
 on:
   push:
-    branches: [main, master, callback-values]
+    branches: [main, master, docs]
     paths:
       - 'docs/**'
 
